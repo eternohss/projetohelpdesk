@@ -1,7 +1,7 @@
 <aside class="main-sidebar">
     <section class="sidebar">
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="treeview" *ngIf="shared.user.profile == 'ADMIN'">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-edit"></i> <span>Users</span>
             <span class="pull-right-container">
@@ -9,11 +9,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a [routerLink]="['/user-list']"><i class="fa fa-circle-o"></i> List</a></li>
-            <li><a [routerLink]="['/user-new']"><i class="fa fa-circle-o"></i> New User</a></li>
+           
           </ul>
         </li>
-        <li class="treeview" *ngIf="shared.user.profile != 'ADMIN'">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-edit"></i> <span>Ticket</span>
             <span class="pull-right-container">
@@ -21,8 +20,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a [routerLink]="['/ticket-list']"><i class="fa fa-circle-o"></i> List</a></li>
-            <li *ngIf="shared.user.profile == 'CUSTOMER'"><a [routerLink]="['/ticket-new']"><i class="fa fa-circle-o"></i> New Ticket</a></li>
+            <li><a ><i class="fa fa-circle-o"></i> List</a></li>
+            <li><a><i class="fa fa-circle-o"></i> New Ticket</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -33,7 +32,7 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a [routerLink]="['/summary']"><i class="fa fa-circle-o"></i>To view </a></li>
+              <li><a><i class="fa fa-circle-o"></i>To view </a></li>
             </ul>
           </li>
       </ul>
